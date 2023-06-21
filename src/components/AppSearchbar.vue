@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input type="text">
+        <input type="text" v-model="store.searchText">
 
         <button>
             Search
@@ -9,8 +9,16 @@
 </template>
 
 <script>
+import { store } from '../store.js';
+
 export default {
     name: "AppSearchbar",
+
+    data(){
+        return{
+            store,
+        }
+    }
 }
 </script>
 
