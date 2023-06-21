@@ -1,8 +1,5 @@
 <template>
     <div>
-        <h3>
-            SINGLE ITEM
-        </h3>
     </div>
 </template>
 
