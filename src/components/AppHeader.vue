@@ -1,9 +1,5 @@
 <template>
     <header>
-        <h1>
-            APP HEADER
-        </h1>
-        
         <AppSearchbar/>
     </header>
 </template>
