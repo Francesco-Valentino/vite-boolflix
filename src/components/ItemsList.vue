@@ -1,6 +1,6 @@
 <template>
     <div>
-        <SingleItem/>
+        <SingleItem v-for="item in items"/>
     </div>
 </template>
 
@@ -14,7 +14,11 @@ export default {
     
     components:{
         SingleItem,
-    }
+    },
+
+    props: {
+        items: Array,
+    },
 }
 </script>
 

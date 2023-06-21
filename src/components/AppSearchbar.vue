@@ -1,8 +1,8 @@
 <template>
     <div>
-        <input type="text" v-model="store.searchText">
+        <input type="text" v-model="txtInput">
 
-        <button>
+        <button @click="sendInput()">
             Search
         </button>
     </div>
@@ -16,7 +16,20 @@ export default {
 
     data(){
         return{
+            txtInput: "",
             store,
+        }
+    },
+
+    methods: {
+        sendInput(){
+            console.log(this.txtInput);
+
+            store.searchText = this.txtInput;
+
+            console.log(store.searchText);
+
+            /* this.txtInput = ''; */
         }
     }
 }
