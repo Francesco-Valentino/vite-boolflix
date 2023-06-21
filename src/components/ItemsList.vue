@@ -1,6 +1,7 @@
 <template>
     <div>
-        <SingleItem v-for="item in items"/>
+        <SingleItem v-for="item in items"
+        />
     </div>
 </template>
 
@@ -11,6 +12,12 @@ import { store } from '../store.js';
 
 export default {
     name: "ItemsList",
+
+    data(){
+        return{
+            store
+        }
+    },
     
     components:{
         SingleItem,
