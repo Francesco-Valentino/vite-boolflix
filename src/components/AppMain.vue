@@ -1,9 +1,5 @@
 <template>
     <main>
-        <h1>
-            APP MAIN
-        </h1>
-
         <ItemsList/>
     </main>
 </template>
