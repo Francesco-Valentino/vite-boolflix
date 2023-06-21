@@ -1,16 +1,14 @@
 <template>
     <div>
-        
+        <h3>
+            SINGLE ITEM
+        </h3>
     </div>
 </template>
 
 <script>
 export default {
-    name: "",
-    
-    components:{
-
-    }
+    name: "SingleItem",
 }
 </script>
 

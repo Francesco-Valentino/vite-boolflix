@@ -1,16 +1,14 @@
 <template>
     <div>
-        
+        <h2>
+            APP SEARCHBAR
+        </h2>
     </div>
 </template>
 
 <script>
 export default {
-    name: "",
-    
-    components:{
-
-    }
+    name: "AppSearchbar",
 }
 </script>
 

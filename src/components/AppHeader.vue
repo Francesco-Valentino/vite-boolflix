@@ -1,15 +1,21 @@
 <template>
-    <div>
+    <header>
+        <h1>
+            APP HEADER
+        </h1>
         
-    </div>
+        <AppSearchbar/>
+    </header>
 </template>
 
 <script>
+import AppSearchbar from './AppSearchbar.vue';
+
 export default {
-    name: "",
+    name: "AppHeader",
     
     components:{
-
+        AppSearchbar,
     }
 }
 </script>

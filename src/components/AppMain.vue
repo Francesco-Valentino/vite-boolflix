@@ -1,15 +1,21 @@
 <template>
-    <div>
+    <main>
+        <h1>
+            APP MAIN
+        </h1>
         
-    </div>
+        <ItemsList/>
+    </main>
 </template>
 
 <script>
+import ItemsList from './ItemsList.vue';
+
 export default {
-    name: "",
+    name: "AppMain",
     
     components:{
-
+        ItemsList,
     }
 }
 </script>
