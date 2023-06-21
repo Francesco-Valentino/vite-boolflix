@@ -1,9 +1,5 @@
 <template>
     <div>
-        <h2>
-            ITEMS LIST
-        </h2>
-
         <SingleItem/>
     </div>
 </template>
