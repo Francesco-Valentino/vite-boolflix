@@ -1,8 +1,10 @@
 <template>
     <div>
-        <h2>
-            APP SEARCHBAR
-        </h2>
+        <input type="text">
+
+        <button>
+            Search
+        </button>
     </div>
 </template>
 
