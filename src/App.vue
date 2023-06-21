@@ -8,6 +8,6 @@
 
 <style lang="scss">
 @import './styles/general.scss';
-
+@import 'bootstrap/scss/bootstrap';
 
 </style>
