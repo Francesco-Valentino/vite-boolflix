@@ -1,6 +1,6 @@
 <template>
     <header>
-        <AppSearchbar @search="getMovie, getTvSeries"/>        
+        <AppSearchbar @search="getMovie(), getTvSeries()"/>        
     </header>
 
     <main>
