@@ -1,7 +1,10 @@
 <template>
     <div>
         <SingleItem v-for="item in items"
-        :item="item"/>
+        :itemName="item.title"
+        :itemOriginalName="item.original_title"
+        :itemLanguage="item.original_language"
+        :itemRating="item.vote_average"/>
     </div>
 </template>
 

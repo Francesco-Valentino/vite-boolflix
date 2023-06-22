@@ -22,6 +22,7 @@ export default {
         return{
             store,
             items: [],
+            series: [],
         }
     },
 
@@ -47,8 +48,8 @@ export default {
             axios.get('https://api.themoviedb.org/3/search/tv?api_key=388bc42a36d295b0d1d3ccd86ca4779e&query=' + store.searchText)
             .then((response) => {
             console.log(response.data.results);
-            this.items = response.data.results;
-            console.log(this.items);
+            this.series = response.data.results;
+            console.log(this.series);
             })
             .catch(function (error) {
             console.log(error);

@@ -35,8 +35,11 @@ export default {
     name: "SingleItem",
 
     props: {
-        item: Object,
-    }
+        itemName: String,
+        itemOriginalName: String,
+        itemLanguage: String,
+        itemRating: String,
+    },
 }
 </script>
 
