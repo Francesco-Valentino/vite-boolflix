@@ -1,17 +1,21 @@
 <template>
     <header>
-        <AppSearchbar @search="getMovie"/>        
+        <AppSearchbar @search="getMovie, getTvSeries"/>        
     </header>
 
     <main>
         <ItemsList 
         :items="items"/>
+
+        <SeriesList 
+        :series="series"/>
     </main>
 </template>
 
 <script>
 import AppSearchbar from './AppSearchbar.vue';
 import ItemsList from './ItemsList.vue';
+import SeriesList from './SeriesList.vue';
 import axios from 'axios';
 import { store } from '../store.js';
 
@@ -29,6 +33,7 @@ export default {
     components: {
         AppSearchbar,
         ItemsList,
+        SeriesList,
     },
 
     methods: {
