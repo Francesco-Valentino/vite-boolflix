@@ -1,23 +1,33 @@
 <template>
     <header>
-        <AppSearchbar/>        
+        <AppSearchbar @search="getMovie"/>        
     </header>
 
     <main>
-        <AppMain/>
+        <ItemsList 
+        :items="items"/>
     </main>
 </template>
 
 <script>
 import AppSearchbar from './AppSearchbar.vue';
-import AppMain from './AppMain.vue';
+import ItemsList from './ItemsList.vue';
+import axios from 'axios';
+import { store } from '../store.js';
 
 export default {
     name: "AppBody",
 
+    data(){
+        return{
+            store,
+            items: [],
+        }
+    },
+
     components: {
         AppSearchbar,
-        AppMain
+        ItemsList,
     },
 
     methods: {

@@ -1,8 +1,5 @@
 <template>
-    <main>
-        <ItemsList 
-        :items="items"/>
-    </main>
+    
 </template>
 
 <script>

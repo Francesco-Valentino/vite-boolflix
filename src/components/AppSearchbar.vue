@@ -2,7 +2,7 @@
     <div>
         <input type="text" v-model="txtInput">
 
-        <button @click="sendInput()">
+        <button @click="sendInput(), $emit('search')">
             Search
         </button>
     </div>
