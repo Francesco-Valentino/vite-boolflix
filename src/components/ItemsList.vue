@@ -1,7 +1,7 @@
 <template>
     <div>
         <SingleItem v-for="item in items"
-        />
+        :item="item"/>
     </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 
     data(){
         return{
-            store
+            store,
         }
     },
     
