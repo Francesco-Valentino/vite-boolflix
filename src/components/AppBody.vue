@@ -1,15 +1,17 @@
 <template>
-    <header class="bgBlack">
-        <AppSearchbar @search="getMovie(), getTvSeries()"/>        
-    </header>
+    <div class="appWrap bgBlack">
+        <header class="bgBlack">
+            <AppSearchbar @search="getMovie(), getTvSeries()"/>        
+        </header>
 
-    <main class="bgBlack">
-        <ItemsList 
-        :items="items"/>
+        <main class="bgBlack">
+            <ItemsList 
+            :items="items"/>
 
-        <SeriesList 
-        :series="series"/>
-    </main>
+            <SeriesList 
+            :series="series"/>
+        </main>
+    </div>
 </template>
 
 <script>
