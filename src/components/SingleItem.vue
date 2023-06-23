@@ -8,6 +8,8 @@
             {{ itemOriginalName }}
         </h2>
 
+        <img :src="https://image.tmdb.org/t/p/w400/ + itemImage" :alt="itemImage + ' poster'">
+
         <img v-if="itemLanguage === 'en'" src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png' alt="American Flag">
 
         <img v-else-if="itemLanguage === 'it'" src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png' alt="Italian Flag">
@@ -39,6 +41,7 @@ export default {
         itemOriginalName: String,
         itemLanguage: String,
         itemRating: Number,
+        itemImage: String,
     },
 }
 </script>

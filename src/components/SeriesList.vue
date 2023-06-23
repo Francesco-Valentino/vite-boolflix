@@ -4,7 +4,8 @@
         :itemName="item.name"
         :itemOriginalName="item.original_name"
         :itemLanguage="item.original_language"
-        :itemRating="item.vote_average"/>
+        :itemRating="item.vote_average"
+        :itemImage="poster_path"/>
     </div>
 </template>
 
