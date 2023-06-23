@@ -1,9 +1,9 @@
 <template>
-    <header>
+    <header class="bgBlack">
         <AppSearchbar @search="getMovie(), getTvSeries()"/>        
     </header>
 
-    <main>
+    <main class="bgBlack">
         <ItemsList 
         :items="items"/>
 
@@ -65,5 +65,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
+
 </style>

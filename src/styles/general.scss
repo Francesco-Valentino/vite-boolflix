@@ -1,0 +1,9 @@
+.bgBlack{
+    background-color: black;
+}
+
+div.itemWrap{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}

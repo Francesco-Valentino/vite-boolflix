@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="itemWrap d-flex">
         <SingleItem v-for="item in series"
         :itemName="item.name"
         :itemOriginalName="item.original_name"
