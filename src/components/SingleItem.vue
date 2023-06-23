@@ -8,7 +8,7 @@
             {{ itemOriginalName }}
         </h2>
 
-        <img :src="'https://image.tmdb.org/t/p/w500/' + itemImage" :alt="itemImage + ' poster'">
+        <img :src="'https://image.tmdb.org/t/p/w342/' + itemImage" :alt="itemName + ' poster'">
 
         <img v-if="itemLanguage === 'en'" src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png' alt="American Flag">
 
